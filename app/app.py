@@ -22,6 +22,12 @@ def dividir(num1, num2):
     else:
         return 'Error: No se puede dividir por cero.'
     
+def factorial_recursivo(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial_recursivo(n-1)
+    
 @app.route('/calcular', methods=['POST'])
 def calcular():
     num1 = float(request.form['num1'])
@@ -36,6 +42,12 @@ def calcular():
         resultado = multiplicar(num1, num2)
     elif operacion == 'dividir':
         resultado = dividir(num1, num2)
+    elif operacion == 'factorial':
+        resultado = factorial_recursivo(num1)
+    elif operacion == 'potencia':
+        resultado = num1 ** num2
+    elif operacion == 'raiz':
+        resultado = num1 ** (1/num2)
     else:
         resultado = 'Error: Operación no válida.'
 

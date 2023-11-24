@@ -15,14 +15,28 @@
         <label for="num2">Número 2:</label>
         <input type="number" name="num2" required>
         <br>
-        <button type="submit" name="operacion" value="sumar">Sumar</button>
-        <button type="submit" name="operacion" value="restar">Restar</button>
-        <button type="submit" name="operacion" value="multiplicar">Multiplicar</button>
-        <button type="submit" name="operacion" value="dividir">Dividir</button>
+        <div class="seccion">
+            <h2>Operaciones Aritméticas</h2>
+            <button type="submit" name="operacion" value="sumar">Sumar</button>
+            <button type="submit" name="operacion" value="restar">Restar</button>
+            <button type="submit" name="operacion" value="multiplicar">Multiplicar</button>
+            <button type="submit" name="operacion" value="dividir">Dividir</button>
+        </div>
+
+        <div class="seccion">
+            <h2>Operaciones Exponenciales</h2>
+            <button type="submit" name="operacion" value="potencia">Potencia</button>
+            <button type="submit" name="operacion" value="raiz_cuadrada">Raíz Cuadrada</button>
+        </div>
+
+        <div class="seccion">
+            <h2>Otras Operaciones</h2>
+            <button type="submit" name="operacion" value="factorial">Factorial</button>
+        </div>
     </form>
 
     {% if resultado %}
-        <h2>Resultado: {{ resultado }}</h2>
+        <p id="resultado">Resultado: {{ resultado }}</p>
     {% endif %}
 </body>
 </html>
