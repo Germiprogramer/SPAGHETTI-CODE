@@ -1,5 +1,7 @@
 # SPAGHETTI-CODE
 
+El link al repositorio es el siguiente: https://github.com/Germiprogramer/SPAGHETTI-CODE.git
+
 # Identificación de características de "Spaghetti Code": Debes ser capaz de identificar las características de "Spaghetti Code" en el código proporcionado. (20%)
 
 El código proporcionado tiene algunas características de "Spaghetti Code".
