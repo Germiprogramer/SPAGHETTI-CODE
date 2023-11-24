@@ -1,0 +1,21 @@
+@startuml Calculadora
+
+class Calculadora {
+  + sumar(num1: float, num2: float): float
+  + restar(num1: float, num2: float): float
+  + multiplicar(num1: float, num2: float): float
+  + dividir(num1: float, num2: float): float
+  + factorial_recursivo(num1: int, num2: int): int
+  + potencia(num1: float, num2: float): float
+  + raiz(num1: float, num2: float): float
+}
+
+Calculadora --|> factorial_recursivo
+Calculadora --|> sumar
+Calculadora --|> restar
+Calculadora --|> multiplicar
+Calculadora --|> dividir
+Calculadora --|> potencia
+Calculadora --|> raiz
+
+@enduml
